@@ -376,3 +376,5 @@ export default{
   addArtist,
   lotsOfArt
 }
+
+console.log()

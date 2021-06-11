@@ -159,3 +159,18 @@ button:hover{
         width:90%;
     }
 }
+@media (max-width:800px){
+    nav{
+        width:70%;
+    }
+    .title-container div{
+        width:90%;
+    }
+    .title-container hr{
+        width:90%;
+    }
+    .artists-container{
+        width:100%;
+    }
+
+    }
