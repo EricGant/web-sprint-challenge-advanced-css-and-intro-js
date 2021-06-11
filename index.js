@@ -247,12 +247,12 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 function get20s(a){
   let newA = [];
   for(let i = 0; i < a.length; i++){
-    if(a[i]['years'].includes('19') && !a[i]['years'].includes('18')){
+    let split = a[i]['years'].split("-")
+      if(split[0] > 1900 && split[1] < 2000)
       newA.push(a[i]['name'])
     }
+      return newA
   }
-  return newA
-}
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
@@ -350,10 +350,9 @@ function getHTML(/* Code here */){
 /* 💪💪💪💪💪💪 STRETCH 2: 💪💪💪💪💪💪
 Create a function called `randomize` that takes a data array as an argument and returns a the same array in a randomized order. */
 
-function randomize(/* Code here */){
-
-    /* Code here */
-
+function randomize(a){
+  a = a.sort(() => Math.random() - 0.5)
+    return a
   }
 
 
