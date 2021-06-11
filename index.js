@@ -252,7 +252,7 @@ function get20s(a){
       newA.push(a[i]['name'])
     }
       return newA
-  }
+  } 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
  Use removeArtist to do the following:
